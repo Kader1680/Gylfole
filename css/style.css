@@ -1,0 +1,76 @@
+:root{
+    background-color: peru;
+
+}
+@media(max-width:414px){
+    body{
+        background-color: var(background-color);
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container{
+        margin: 0px 30px;
+    }
+
+    /* Navbar Content */
+
+    .container nav{
+        display: grid;
+        grid-template-columns: 36% 84%;
+    }
+    .containernav h2{
+        font-size: 2rem;
+    }
+    nav div{
+        margin: 15px 50px;
+        font-size: 20px;
+        
+    }
+    nav div button{
+        
+        border-radius: 8px;
+        padding: 4px 10px;
+    }
+    nav div button:nth-child(1){
+        border: 3px solid cornflowerblue;
+    }
+    nav div button:nth-child(2){
+        background-color: cornflowerblue;
+        border: none;
+    }
+    nav div button:nth-child(2){
+        background-color: cornflowerblue;
+        border: none;
+    }
+
+    /* Content Blog */
+    
+    .container .content{
+        
+    }
+    .content h2{
+        margin: 0px 5rem;
+    }
+
+    .content h3{
+        text-align: center;
+    }
+    .content img{
+        width: 365px;
+        height: 16rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
