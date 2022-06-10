@@ -1,13 +1,20 @@
-let myimg = ["s1.jpg", "s2.jpg", "s3.jpg"];
-let slider_img = document.querySelector('.slider_img')
-// let local_continer = document.getElementById('local_continer')
-
-
-
-
-setInterval(() => {
-    let random = Math.floor(Math.random()*myimg.length)
-    let randomimg = myimg[random]
+let menu = document.querySelector('.menu');
+let drop_down = document.querySelector('.drop_down');
+let menu_left = document.querySelector('.menu_left');
+let drop_down_vis = document.querySelector('.drop_down_vis');
+menu.addEventListener('click', ()=>{
+    menu.classList.toggle('menu_left'),
+    drop_down.classList.toggle('drop_down_vis')
     
-    slider_img.style.backgroundImage = "url('img/"+ randomimg +"')"
-}, 9000);
+})
+
+let faq = document.querySelectorAll('.faq');
+let question = document.querySelector('.question');
+let answer = document.querySelector('.answer');
+let ans_block = document.querySelector('.ans_block');
+
+question.addEventListener('click', ()=>{
+    answer.classList.toggle('ans_block')
+
+    
+})
