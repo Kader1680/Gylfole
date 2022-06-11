@@ -1,5 +1,6 @@
 :root{
     background-color: white;
+    font-family: 'Open Sans', sans-serif;
 
 }
 @media(max-width:414px){
@@ -27,25 +28,34 @@
         align-items: center;
         justify-content: space-between;
     }
-    nav h2{
+    nav h2:nth-child(1){
         font-size: 35px;
         margin: 40px 20px;
+        color: white;
     }
-    nav span{
+    /* nav span{
         margin: 0px 1.5rem;
         padding: 6px;
         border-radius: 6px;
         color: white;
         background-color: gray;
-        transition: 5s;
+        
+        
 
         
+    } */
+    nav span{
+        position: fixed;
+        margin: 0px 20.5rem;
+        padding: 6px;
+        border-radius: 6px;
+        color: white;
+        background-color: gray;
     }
     nav span.menu_left{
-        position: absolute;
-        top: 5;
-        left: 0;
-        transition: 5s;
+        margin: 0px 65px;
+        
+
         
     }
     /* nav .close{
@@ -65,6 +75,17 @@
         transition: 5s;
 
     }
+    nav .drop_down{
+        height: 272px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #00000082;
+        color: white;
+        display: none;
+        transition: 5s;
+
+    }
     nav .drop_down.drop_down_vis{
         width: 290px;
         display: block;
@@ -72,6 +93,16 @@
 
         
     }
+    nav .drop_down.drop_down_vis{         
+        width: 290px;
+        display: block;
+        transition: 5s;
+        position: fixed;
+        height: 100%;
+
+        
+    }
+
     .drop_down ul{
         list-style: none;
     }
@@ -102,6 +133,11 @@
         padding: 9px 29px;
         background-color:orangered;
     }
+    form button:hover{
+        border: 1px solid orangered;
+        color: orangered;
+        background-color:white;
+    }
     /* Content Blog */
     
     .content{
@@ -112,7 +148,8 @@
     }
 
     .content h4{
-        
+        font-weight: 100;
+        max-width: 100%;
     }
     .content .done{
         display: flex;
@@ -152,6 +189,7 @@
         color: #414040;
         line-height: 1.5;
         text-align: unset;
+        font-weight: 100;
     }
     .faq{
 
@@ -179,7 +217,9 @@
 
     .contact .index{
         display: flex;
+        margin: 27px 21%;
     }
+    
     .index span{
         font-size: 2.5rem;
         color: orangered;
@@ -207,6 +247,11 @@
         border: 1px solid gray;
         color: white;
 
+    }
+    .data button:hover{
+        border: 1px solid orangered;
+        color: orangered;
+        background-color:white;
     }
 
 

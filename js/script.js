@@ -1,3 +1,5 @@
+            // drob down section
+
 let menu = document.querySelector('.menu');
 let drop_down = document.querySelector('.drop_down');
 let menu_left = document.querySelector('.menu_left');
@@ -7,6 +9,10 @@ menu.addEventListener('click', ()=>{
     drop_down.classList.toggle('drop_down_vis')
     
 })
+
+
+            // faq section
+
 
 let faq = document.querySelectorAll('.faq');
 let question = document.querySelector('.question');
